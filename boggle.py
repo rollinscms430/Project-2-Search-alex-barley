@@ -31,8 +31,8 @@ from copy import deepcopy
 from collections import defaultdict
 import random
 
-# this is the sample board from the project description
-# typing python boggle.py into the command line will solve this board
+# This is the sample board from the project description.
+# Typing python boggle.py into the command line will solve this board.
 the_board = [['u', 'n', 't', 'h'], 
              ['g', 'a', 'e', 's'],
              ['s', 'r', 't', 'r'],
@@ -56,7 +56,6 @@ class State(object):
            that has already been visited in this solution path
     """
     
-    # constructor for state objects
     def __init__(self, position_sequence, letter_sequence, visited_positions):
         """Constructor for states"""
         self.position_sequence = position_sequence
